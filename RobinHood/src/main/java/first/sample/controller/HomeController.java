@@ -1,4 +1,4 @@
-package com.cyheo.robinhood.controller;
+package first.sample.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
