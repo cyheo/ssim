@@ -23,6 +23,8 @@ public class SampleController {
     public ModelAndView openSampleBoardList(Map<String,Object> commandMap) throws Exception {
         ModelAndView mv = new ModelAndView("/sample/boardList");
 
+        commandMap.put("begin", 1);
+        commandMap.put("end", 20);
         List<Map<String,Object>> list = sampleService.selectBoardList(commandMap);
         mv.addObject("list", list);
 
